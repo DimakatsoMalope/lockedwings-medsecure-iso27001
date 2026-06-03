@@ -1,0 +1,23 @@
+{
+    "properties": {
+        "roleName": "Azure Admin",
+        "description": "Can manage virtual machines in a specific resource group.",
+        "assignableScopes": [
+            "/subscriptions/b4b67e09-1678-4f08-a0bb-49749a533be7/resourceGroups/rg-medsecure-prod"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.Compute/virtualMachines/*",
+                    "Microsoft.Network/virtualNetworks/read",
+                    "Microsoft.Storage/storageAccounts/read"
+                ],
+                "notActions": [
+                    "Microsoft.Compute/virtualMachines/delete"
+                ],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

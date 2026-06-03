@@ -1,0 +1,22 @@
+{
+    "properties": {
+        "roleName": "Security Analyst",
+        "description": "Custom role for security analysts to manage incidents and view Sentinel data.",
+        "assignableScopes": [
+            "/subscriptions/b4b67e09-1678-4f08-a0bb-49749a533be7/resourceGroups/rg-medsecure-prod"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "Microsoft.OperationalInsights/workspaces/read",
+                    "Microsoft.OperationalInsights/workspaces/query/read",
+                    "Microsoft.SecurityInsights/Incidents/read",
+                    "Microsoft.SecurityInsights/Incidents/Write"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}

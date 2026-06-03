@@ -1,0 +1,24 @@
+{
+    "properties": {
+        "roleName": "Auditor",
+        "description": "Provides read-only access to view all resources, read security data, and view compliance policies.",
+        "assignableScopes": [
+            "/subscriptions/b4b67e09-1678-4f08-a0bb-49749a533be7/resourceGroups/rg-medsecure-prod"
+        ],
+        "permissions": [
+            {
+                "actions": [
+                    "*/read",
+                    "Microsoft.Security/policies/read",
+                    "Microsoft.Security/locations/tasks/read",
+                    "Microsoft.Security/securityContacts/read",
+                    "Microsoft.Security/alerts/read",
+                    "Microsoft.Security/locations/alerts/read"
+                ],
+                "notActions": [],
+                "dataActions": [],
+                "notDataActions": []
+            }
+        ]
+    }
+}
